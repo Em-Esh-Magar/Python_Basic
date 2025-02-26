@@ -1,0 +1,45 @@
+
+# 1. Write a program to store five fruits in a list entered by the user.
+
+fruits = [];
+i = 0;
+while i<5:
+    a = input("Enter a fruit name : ");
+    fruits.insert(i,a);
+    i+=1
+    
+print(fruits);
+
+# 2. Write a program to accept marks of 3 students and display them in a sorted manner.
+marks = [];
+j = 0;
+while j < 3:
+    b = int(input("Enter your marks : "));          # To convert into integer, bu deafult input data is in String
+    marks.insert(j,b);
+    j+=1
+marks.sort();
+print(marks);
+
+
+
+# 3. Check that a tuple data cannot be changed in python
+e = (1,2,"Hero",33.5)
+print(e.index(2));
+# e[1] = 3;           ==> Cannot change cause tuples are immutable
+
+
+
+
+# 4. Write a program to sum a list with 4 numbers.
+c = [20,30,40,10];
+sum = 0;
+k = 0;
+while k<4:
+    sum += c[k];
+    k+=1;
+print(sum);
+
+
+# 5. Write a program to count the number of zeros in the following tuple:
+d = (12,3,55,0,4,3,22,0,77,45,0,0,88,0,5);
+print(d.count(0));
